@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 1
+      Header de la pestaña
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -13,5 +13,15 @@
     </ion-toolbar>
   </ion-header>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>Inline Toast</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content class="ion-padding">
+    <ion-button id="open-toast" expand="block">Abrir</ion-button>
+    <p id="message">Este ejemplo de toast abre un Disclaimer presionando un boton y desaparecera en 5 segundos.</p>
+    <ion-toast trigger="open-toast" message="Este Disclaimer desaparecera en 5 segundos" [duration]="5000"></ion-toast>
+  </ion-content>
+  
 </ion-content>
